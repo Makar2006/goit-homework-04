@@ -7,6 +7,8 @@
   --txt-btn: #4d5ae5;
   --bg-btn-h: #404bbf;
   --bg-btn: #4d5ae5;
+  --bg-soc: #4d5ae5;
+  --bg-soc-f-h: #404bbf;
 }
 
 body {
@@ -91,10 +93,19 @@ img {
 }
 
 .section-bg-dr {
-  background-color: var(--bg-dr);
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
-  background-image: url(group-people-working-website-template.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/background-image/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .main-title {
   color: #fff;
@@ -129,21 +140,7 @@ img {
 .btn-main:focus {
   background-color: var(--bg-btn-h);
 }
-.title-offers {
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--title-text-color);
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  margin-bottom: 8px;
-}
-.text-offers {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-}
+
 .title-second {
   font-size: 36px;
   line-height: 1.11;
@@ -171,20 +168,9 @@ img {
   line-height: 1.5;
   text-align: center;
   color: var(--primary-text-color);
+  margin-bottom: 8px;
 }
 
-.footer {
-  background-color: var(--bg-dr);
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.footer-text {
-  color: var(--bg-dr-txt);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  width: 264px;
-}
 .nav-link-f {
   color: #f4f4fd;
 }
@@ -276,13 +262,7 @@ img {
   flex-direction: column;
   gap: 48px;
 }
-.container-offer {
-  display: flex;
-  gap: 24px;
-}
-.list-item-offer {
-  width: calc((100% - 24px * 3) / 4);
-}
+
 .container-exmpl {
   display: flex;
   gap: 24px;
@@ -324,6 +304,11 @@ img {
 .project-cards {
   width: calc((100% - (24px * 2)) / 3);
 }
+.project-cards:hover,
+.project-cards:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -331,10 +316,7 @@ img {
   border: 1px solid #e7e9fc;
   width: calc((100% - 3 * 16px) / 3);
 }
-.link-footer {
-  display: inline-block;
-  margin-bottom: 16px;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -351,3 +333,135 @@ img {
 .section-thr {
   padding-bottom: 120px;
 }
+/**
+  |============================
+  | SOCIALS
+  |============================
+*/
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--bg-soc);
+  border-radius: 50%;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--bg-soc-f-h);
+}
+
+/**
+  |============================
+  | SOCIAL END
+  |============================
+*/
+/**
+  |============================
+  | SECOND SECTION
+  |============================
+*/
+.container-chr {
+  display: flex;
+  gap: 24px;
+}
+.list-item-chr {
+  width: calc((100% - 24px * 3) / 4);
+}
+.title-chr {
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.text-chr {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.chr-icon {
+  display: flex;
+  width: 264px;
+  height: 112px;
+  justify-content: center;
+  align-items: center;
+}
+/**
+  |============================
+  | SECOND SECTION END
+  |============================
+*/
+/**
+  |============================
+  | FIFTH SECTION
+  |============================
+*/
+.client-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.client-link {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+}
+.section-fifth > .title-second {
+  margin-bottom: 72px;
+}
+/**
+  |============================
+  | FIFTH SECTION END
+  |============================
+*/
+/**
+  |============================
+  | FOOTER
+  |============================
+*/
+.footer {
+  background-color: var(--bg-dr);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-text {
+  color: var(--bg-dr-txt);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  width: 264px;
+}
+.link-footer {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.container-footer {
+  display: flex;
+  gap: 120px;
+}
+.footer-text-s {
+  margin-bottom: 16px;
+}
+.container-right > .social-list {
+  justify-content: normal;
+}
+/**
+  |============================
+  | FOOTER END
+  |============================
+*/
