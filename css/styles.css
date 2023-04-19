@@ -222,7 +222,7 @@ img {
   border-top: none;
 }
 .img-content {
-  padding: 32px 32px;
+  padding: 32px 16px;
   border-radius: 0px 0px 4px 4px;
 }
 .same-img {
@@ -285,6 +285,9 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
+}
+.social-list:not(1, 4) {
+  gap: 16px;
 }
 .social-link {
   display: flex;
@@ -438,9 +441,16 @@ img {
   height: 88px;
 }
 .client-link:hover,
-.client-link:focus {
+.client-icon:focus {
   border-color: #404bbf;
+}
+
+.client-icon:hover,
+.client-icon:focus {
   fill: #404bbf;
+}
+.client-icon {
+  fill: #8e8f99;
 }
 .section-fifth > .title-second {
   margin-bottom: 72px;
