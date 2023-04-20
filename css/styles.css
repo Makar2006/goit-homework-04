@@ -455,7 +455,7 @@ img {
   color: #8e8f99;
 }
 .client-link:hover,
-.client-icon:focus {
+.client-link:focus {
   border-color: #404bbf;
 }
 
@@ -508,8 +508,10 @@ img {
 }
 .container-footer {
   display: flex;
-  gap: 120px;
   align-items: baseline;
+}
+.container-left {
+  margin-right: 120px;
 }
 
 .footer-text-s {
@@ -520,6 +522,15 @@ img {
 .container-right > .social-list {
   gap: 16px;
   justify-content: normal;
+}
+.social-link-f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--bg-soc);
+  border-radius: 50%;
 }
 .social-link-f:hover,
 .social-link-f:focus {
